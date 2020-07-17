@@ -7,13 +7,13 @@ import { INewItem } from "../../../shared/interface";
 const Header: FC<headerProps> = (props) => {
   const { newItem, onHandleInput, onAddItem } = props;
   return (
-    <div>
+    <>
       <Input
         newItem={newItem}
         onHandleInput={onHandleInput}
       ></Input>
       <Add onAddItem={onAddItem}></Add>
-    </div>
+    </>
   );
 };
 export interface headerProps {
