@@ -3,12 +3,12 @@ import "./navbar.scss";
 const NavBar: FC<{ totalItems: number }> = ({ totalItems }) => {
   return (
     <nav className="navbar navbar-dark bg-dark">
-      <a className="navbar-brand" href="#">
+      <div className="navbar-brand">
         Navbar
         <span className="badge badge-pill badge-secondary m-2">
           {totalItems}
         </span>
-      </a>
+      </div>
     </nav>
   );
 };

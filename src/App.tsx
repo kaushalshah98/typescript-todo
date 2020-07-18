@@ -1,4 +1,4 @@
-import React, { Component, Fragment, FormEvent, ChangeEvent } from "react";
+import React, { Component, Fragment, ChangeEvent } from "react";
 import "./App.css";
 import NavBar from "./components/navbar/navbar";
 import Container from "./components/to-do-container/container";

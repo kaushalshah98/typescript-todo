@@ -1,4 +1,4 @@
-import React, { Fragment, FC, FormEvent } from "react";
+import React, { Fragment, FC } from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "./delete.scss";
 
