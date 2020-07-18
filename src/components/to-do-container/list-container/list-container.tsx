@@ -1,4 +1,4 @@
-import React, { Fragment, FormEvent } from "react";
+import React, { Fragment, FormEvent, memo } from "react";
 import "./list-container.scss";
 import List from "../list/list";
 import { INewItem } from "../../../shared/interface";
@@ -23,4 +23,4 @@ export interface listcontainerProps {
   onUpdateItem: () => void;
   onDeleteItem: () => FormEvent;
 }
-export default ListContainer;
+export default memo(ListContainer);

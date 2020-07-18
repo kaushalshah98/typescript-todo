@@ -1,4 +1,4 @@
-import React from "react";
+import React, { memo } from "react";
 import Header from "./header/header";
 import ListContainer from "./list-container/list-container";
 import "./container.scss";
@@ -36,4 +36,4 @@ export interface containerProps {
   onAddItem: any;
   list: INewItem[];
 }
-export default TodoContainer;
+export default memo(TodoContainer);
