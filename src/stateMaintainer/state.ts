@@ -1,4 +1,4 @@
-import { ChangeEvent, useState, useEffect } from 'react'
+import { ChangeEvent, useState } from 'react'
 import { INewItem } from '../shared/interface';
 
 const useToDoState = () => {
