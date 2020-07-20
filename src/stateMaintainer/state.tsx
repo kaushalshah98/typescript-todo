@@ -1,9 +1,11 @@
-import { ChangeEvent, useState } from 'react'
+import { ChangeEvent, useState, useEffect } from 'react'
 import { INewItem } from '../shared/interface';
 
 const useToDoState = () => {
     const [list, setList]: [INewItem[], any] = useState([]);
     const [newItem, setNewItem]: [INewItem, any] = useState({ key: 0, value: '' })
+
+    // useEffect(() => setNewItem({ key: 0, value: "" }));
 
     const onDeleteItem = (key: number) => {
         const newList: any = list.filter((item: INewItem) => item.key !== key);
